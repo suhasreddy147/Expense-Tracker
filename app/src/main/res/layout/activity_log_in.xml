@@ -21,6 +21,7 @@
         app:layout_constraintVertical_bias="0.17000002">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_tf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="TextContrastCheck" />
@@ -38,9 +39,11 @@
         app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:passwordToggleEnabled="true"
         app:layout_constraintVertical_bias="0.39">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="TextContrastCheck" />
