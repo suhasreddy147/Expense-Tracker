@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Expense Tracker</string>
+    <string name="top_app_bar">Today</string>
 </resources>
