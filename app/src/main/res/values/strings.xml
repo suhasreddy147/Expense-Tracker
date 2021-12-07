@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Expense Tracker</string>
     <string name="top_app_bar">Today</string>
+    <string name="content_description_date">Select date</string>
+    <string name="content_description_currency">Select currency</string>
+    <string name="content_description_notifications">Notifications</string>
+    <string name="content_description_currency_drop_down">Drop down menu to select currency</string>
+    <string name="floating_action_button">Add Task</string>
 </resources>

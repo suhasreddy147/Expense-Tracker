@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_notification"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="Notifications"
+        android:contentDescription="@string/content_description_notifications"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/item_date"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        android:title="Date"
+        android:contentDescription="@string/content_description_date"
+        app:showAsAction="always"/>
+
+
+    <group
+        android:id="@+id/currency_group">
+        <item
+        android:id="@+id/item_currency"
+        android:icon="@drawable/ic_baseline_attach_money_24"
+        android:title="Currency"
+        android:contentDescription="@string/content_description_currency"
+        app:showAsAction="always"/>
+
+        <item
+            android:id="@+id/item_drop_down"
+            android:icon="@drawable/ic_baseline_arrow_drop_down_24"
+            android:title="Drop Down Menu"
+            android:contentDescription="@string/content_description_currency_drop_down"
+            app:showAsAction="always"/>
+    </group>
+
+
+
+</menu>
