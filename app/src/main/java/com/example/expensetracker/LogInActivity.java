@@ -40,7 +40,9 @@ public class LogInActivity extends AppCompatActivity {
                     Intent displayScreen = new Intent(LogInActivity.this, DashboardActivity.class);
                     startActivity(displayScreen);
                 }
+                else{
                     Toast.makeText(getApplicationContext(),"Email or Password Incorrect",Toast.LENGTH_SHORT).show();
+                }
             }
             });
     }

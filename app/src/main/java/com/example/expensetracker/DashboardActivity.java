@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
 public class DashboardActivity extends AppCompatActivity {
@@ -19,6 +21,7 @@ public class DashboardActivity extends AppCompatActivity {
     MaterialToolbar topAppBar;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+    FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,8 @@ public class DashboardActivity extends AppCompatActivity {
         topAppBar = findViewById(R.id.topAppBar);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
+        fab=findViewById(R.id.floatingActionButton);
+
         topAppBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,5 +64,9 @@ public class DashboardActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        fab.setOnClickListener((view -> {
+            startActivity(new Intent(DashboardActivity.this,NextActivity.class));
+        }));
     }
 }

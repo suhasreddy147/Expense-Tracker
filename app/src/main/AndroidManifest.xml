@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExpenseTracker">
         <activity
+            android:name=".NextActivity"
+            android:exported="false" />
+        <activity
             android:name=".DashboardActivity"
             android:exported="false"
-            android:theme="@style/Theme.Dashboard"/>
+            android:theme="@style/Theme.Dashboard" />
         <activity
             android:name=".SignUpActivity"
             android:exported="false"
