@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExpenseTracker">
         <activity
-            android:name=".NextActivity"
+            android:name=".AddExpenseActivity"
             android:exported="false" />
         <activity
             android:name=".DashboardActivity"
